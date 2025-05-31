@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Fin De Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mareme Niang</div>
+            <div class="menu-icon" onclick="toggleMnu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">A propos</a></li>
+                <li><a href="#portfolio">Services</a></li>
+                <li><a href="#contact">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section Hero -->
+     <section id="home" class="hero">
+     <h1>Bonjour, je suis Marème Niang</h1>
+     <p>Etudiante en première année de développement web, je débute dans le création de sites modernes.</p>
+     <a href="#contact" class="btn">Me contacter</a>
+     </section>
+     <!-- Section A propos -->
+      <section id="about" class="section">
+        <h2>Mes services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Développement web</h3>
+                <p>Création de sites modernes avec HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="service-item">
+                <h3>Design responsive</h3>
+                <p>Sites adaptés à tous les appareils (mobile, tablette, ordinateur)</p>
+            </div>
+            <div class="service-item">
+                <h3>Animations</h3>
+                <p>Ajout d'interactions dynamiques pour une meilleure expérience utilisateur.</p>
+            </div>
+        </div>
+      </section>
+      <!-- Section Portfolio -->
+       <section id="portfolio" class="section">
+        <h2>Mon portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Projet 1</div>
+            <div class="portfolio-item">Projet 2</div>
+            <div class="portfolio-item">Projet 3</div> 
+        </div>
+       </section>
+       <!-- Section Contact -->
+        <section id="contact" class="section">
+            <h2>Contactez-moi</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+        <!-- Footer -->
+         <footer>
+            <p>© 2025 Marème Niang. Tous droits réservés.</p>
+            <p>Email : niangmareme349@gmail.com | téléphone : 78 731 56 39</p>
+         </footer>
+
+         <script src="script.js"></script>
+</body>
+</html>
