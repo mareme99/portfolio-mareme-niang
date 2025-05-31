@@ -23,3 +23,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// Gestion du changement de thème
+document.addEventListener('DOMContentLoaded',()=> {
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+// Vérifie si un thème est déjà sauvegardé dans le stockage local
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        toggleButton.textContent = savedTheme === 'light-mode' ? 'Passer au thème sombre' : 'Passer au thème clair';
+    } else {
+        toggleButton.textContent = 'Passer au thème clair';
+    }
+
+    // Ajoute un écouteur d'événement pour le bouton de thème
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        const isLightMode = body.classList.contains('light-mode');
+        toggleButton.textContent = isLightMode ? 'Passer au thème sombre' : 'Passer au thème clair';
+        // Sauvegarde le thème dans le stockage local
+        localStorage.setItem('theme', isLightMode ? 'light-mode' : '');
+    });
+});
