@@ -187,104 +187,9 @@ body.light-mode .theme-btn {
 }
 
 body.light-mode .theme-btn:hover {
-    background-color: #555;
-font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
+    background-color: #555
 }
 
-body.light-mode .menu-icon {
-    color: #333;
-}
-
-/* Bouton de thème */
-.theme-btn {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.theme-btn:hover {
-    background-color: #ddd;
-}
-
-body.light-mode .theme-btn {
-    background-color: #333;
-    color: #fff;
-}
-
-body.light-mode .theme-btn:hover {
-    background-color: #555;
-font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-}
-
-body.light-mode .menu-icon {
-    color: #333;
-}
-
-/* Bouton de thème */
-.theme-btn {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.theme-btn:hover {
-    background-color: #ddd;
-}
-
-body.light-mode .theme-btn {
-    background-color: #333;
-    color: #fff;
-}
-
-body.light-mode .theme-btn:hover {
-    background-color: #555;
-font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-}
-
-body.light-mode .menu-icon {
-    color: #333;
-}
-
-/* Bouton de thème */
-.theme-btn {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.theme-btn:hover {
-    background-color: #ddd;
-}
-
-body.light-mode .theme-btn {
-    background-color: #333;
-    color: #fff;
-}
-
-body.light-mode .theme-btn:hover {
-    background-color: #555;
-}
 /* Section Hero */
 .hero {
     height: 100vh;
@@ -338,6 +243,18 @@ body.light-mode .btn {
 
 body.light-mode .btn:hover {
     background: #555;
+}
+
+.profile-photo {
+    widht: 150px;
+    height: 150px;
+    border-radius: 50%
+    margin: 1rem auto;
+    display: block;
+    border: 2px solid #ff6f61;
+}
+body.light-mode .profile-photo {
+    border-color: #333;
 }
 
 /* Sections génériques */
