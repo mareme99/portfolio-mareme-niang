@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Ajout de transition pour le changement de thème */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background: #1a1a1a;
     color: #fff;
-    transition: background-color 0.3s, color 0.3s; /* Ajout de transition pour le changement de thème */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 /* Thème sombre (par défaut, déjà défini dans ton code) */
