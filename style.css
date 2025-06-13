@@ -8,10 +8,10 @@
 /* Ajout de transition pour le changement de thème */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: #1a1a1a;
+    background: #000;
     color: #fff;
-    transition: background-color 0.3s, color 0.3s; 
+    margin: 0;
+    padding: 2rem;
 }
 
 /* Thème sombre (par défaut, déjà défini dans ton code) */
@@ -319,18 +319,19 @@ body.light-mode .service-item p {
 
 /* Portfolio */
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .portfolio-item {
-    background: #333;
-    padding: 3rem;
+    background: #111;
+    padding: 1rem;
     border-radius: 10px;
-    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
 body.light-mode .portfolio-item {
@@ -340,6 +341,10 @@ body.light-mode .portfolio-item {
 
 .portfolio-item:hover {
 transform: scale(1.05);
+}
+
+.portfolio-item p {
+    transform: scale(1.05);
 }
 
 /* Formulaire de contact */
@@ -418,4 +423,37 @@ body.light-mode footer {
     .hero h1 {
         font-size: 2rem;
     }
+}
+
+#portfolio {
+    padding: 50px 20px;
+    background-color: #000;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.projet-image {
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto 0;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.projet-image:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
 }
